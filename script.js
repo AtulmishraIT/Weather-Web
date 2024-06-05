@@ -29,7 +29,7 @@ async function getvalue(){
     else if(cast === "Clear"){
         cloud = " <i class='fa-solid fa-sun'></i>";
     }
-    else if(cast === "Rainy"){
+    else if(cast === "Rain"){
         cloud = ' <i class="fa-solid fa-cloud-showers-heavy"></i>';
     }
     else if(cast === "Haze"){
