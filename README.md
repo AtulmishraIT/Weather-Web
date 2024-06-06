@@ -1,4 +1,4 @@
 # Weather-Web
 This page for weather detection.
-webpage link :
+get demo:
 https://weather-atulmishra.netlify.app/
