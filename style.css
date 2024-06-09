@@ -167,5 +167,5 @@ button{
     bottom: 0;
     z-index: -1;
     opacity: 50%;
-    width: fit-content;
+    width: 420vh;
 }
