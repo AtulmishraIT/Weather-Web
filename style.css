@@ -6,16 +6,18 @@
 
 body{
     display: flex;
-    background-color: rgb(147, 147, 187);
+    background-color: transparent;
     width: auto;
     height: auto;
+    background-color: rgb(110, 92, 69);
 }
 
 form {
     display: flex;
     justify-content: center ;
     align-items: center;
-    background-color: aliceblue;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     margin-left: auto;
     margin-right: auto;
     margin-top: 10rem;
@@ -25,12 +27,13 @@ form {
 }
 
 .head{
-    margin-left: 5.5rem;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
 }
 
 .weather-container {
-    border: 1px solid green;
     border-radius: 50px;
 }
 
@@ -38,21 +41,22 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10vh;
+    padding: 1rem;
 }
 
 .search input{  
     border: none;
-    height: 2rem;
-    width: 20rem;
+    height: 10vh;
+    width: 30vh;
     outline: none;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
     font-size: 1rem;
     padding-left: 1rem;
+    background-color: rgb(239, 231, 231);
 }
 
-.search input:focus, button:focus{
-    border: 1.5px solid yellowgreen;
+.search input:focus{
+    background-color: rgb(239, 231, 231);
 }
 
 datalist {
@@ -63,6 +67,7 @@ datalist {
 .weather-detect{
     display: flex;
 }
+
 
 .temperature{
     display: flex;
@@ -75,6 +80,51 @@ datalist {
     padding: 1rem;
     gap: 1rem;
     font-size: 3rem;
+}   
+
+.temperature i{
+    animation: up1 0.8s alternate;
+}
+
+@keyframes up1 {
+    0%{
+        transform: skewX(340deg);
+    }
+    50%{
+        transform: matrix3d(360deg);
+    }
+    100%{
+        transform: skewY(180deg);
+    }
+}
+
+button{
+    width: 20vh;
+    height: 9.9vh;
+    text-decoration: none ;
+    border: none;
+    outline: none;
+    margin-right: 1rem;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+#btn:hover{
+    cursor: pointer;
+    background-color: rgb(61, 57, 57);
+    color: white;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    height: 10vh;
+    width: 5vh;
+    background-color: rgb(239, 231, 231);
+    border: none;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
 }
 
 .feels1{
@@ -88,6 +138,8 @@ datalist {
 #overcast{
     margin-right: 2rem;
 }
+
+
 .city{
     font-size: 0.8rem;
     margin-left: 13rem;
@@ -96,11 +148,23 @@ datalist {
 
 .github{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 6rem;
     font-size: 0.8rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
 }
 
 .github a{
     text-decoration: none;
+}
+
+.weather-video {
+    height: fit-content;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 50%;
 }
