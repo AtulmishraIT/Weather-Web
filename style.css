@@ -161,7 +161,7 @@ button{
 }
 
 .weather-video {
-    height: fit-content;
+    height: max-content;
     position: absolute;
     right: 0;
     bottom: 0;
