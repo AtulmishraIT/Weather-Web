@@ -161,9 +161,9 @@ button{
 }
 
 video{
-    height: max-content;
     position: absolute;
     opacity: 50%;
     height: 1220px;
     width: 20vh;
+    object-fit: contain;
 }
