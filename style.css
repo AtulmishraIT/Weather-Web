@@ -100,8 +100,7 @@ datalist {
 
 button{
     width: 20vh;
-    height: 9.9vh;
-    text-decoration: none ;
+    heighext-decoration: none ;
     border: none;
     outline: none;
     margin-right: 1rem;
@@ -163,8 +162,7 @@ button{
 .weather-video {
     height: max-content;
     position: absolute;
-    right: 0;
-    bottom: 0;
     opacity: 50%;
+    height: 220px;
     width: 420vh;
 }
