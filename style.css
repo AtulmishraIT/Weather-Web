@@ -160,10 +160,10 @@ button{
     text-decoration: none;
 }
 
-.weather-video {
+video{
     height: max-content;
     position: absolute;
     opacity: 50%;
-    height: 220px;
-    width: 420vh;
+    height: 1220px;
+    width: 20vh;
 }
