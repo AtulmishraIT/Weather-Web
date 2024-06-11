@@ -100,7 +100,8 @@ datalist {
 
 button{
     width: 20vh;
-    heighext-decoration: none ;
+    height: 10vh;
+    text-decoration: none ;
     border: none;
     outline: none;
     margin-right: 1rem;
